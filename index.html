@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Petify</title>
+  </head>
+  <body>
+    <div class="main_container">
+      <div class="header">
+        <div class="head_div">
+          <div class="header_above">
+            <div class="head_logo_name">
+              <div class="head_logo">
+                <a href="./index.html" class="head_logo">P</a>
+              </div>
+              <h1 class="head_name">Petify</h1>
+            </div>
+            <div class="head_abt_sign">
+              <div class="head_about">
+                <nav>
+                  <ul class="head_ul">
+                    <li class="head_abt">
+                      <a class="link_href" href="./index.html">home</a>
+                    </li>
+                    <li class="head_abt">
+                      <a class="link_href" href="./index.html">Company</a>
+                    </li>
+                    <li class="head_abt">
+                      <a class="link_href" href="./index.html">Pets services</a>
+                    </li>
+                    <li class="head_abt">
+                      <a class="link_href" href="./index.html">Features</a>
+                    </li>
+                    <li class="head_abt">
+                      <a class="link_href" href="./index.html">Contact Us</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="head_log_sign">
+                <div class="head_login" id="login_div">Login</div>
+                <div id="head_sign" class="head_sign">Sign Up</div>
+              </div>
+            </div>
+            <button class="burg" id="head_burg">
+              <div class="head_burg">
+                <div id="burg_line" class="burg_line"></div>
+                <div id="burg_line_sec" class="burg_line_sec"></div>
+              </div>
+            </button>
+          </div>
+          <div class="head_hidden_info" id="head_hidden_info">
+            <nav>
+              <ul class="head_ul_hid" id="head_ul_hid">
+                <li class="hid_li">Home</li>
+                <li class="hid_li">Company</li>
+                <li class="hid_li">Pets services</li>
+                <li class="hid_li">Feature</li>
+                <li class="hid_li">Contact Us</li>
+                <li id="login_hidden" class="hid_li">Login</li>
+                <li id="sign_hidden" class="hid_li">Sign Up</li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header_below">
+            <div class="head_info">
+              <h1 class="head_heading">
+                Premium Care <br />
+                For Happy Pets <br />
+                And Loving Owners
+              </h1>
+
+              <p class="head_paragraph">
+                We offer professional pet care services to keep your
+                <br class="head_br" />
+                furry friends happy, healthy, and safe—because their
+                <br class="head_br" />
+                well-being matters in every stage of life.
+              </p>
+
+              <div class="head_btns">
+                <button class="head_btn" id="get_started">Get Started</button>
+                <button id="watch_btn" class="head_bt">Watch Video</button>
+              </div>
+            </div>
+            <div class="head_video_div">
+              <video
+                controls
+                class="head_video"
+                src="./assets/video/petCare.mp4"
+              ></video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="hidden_container" class="hidden_container">
+        <div class="hidden">
+          <div class="hidden_video_div">
+            <video
+              controls
+              autoplay
+              id="hidden_video"
+              class="hidden_video"
+              src="./assets/video/petCare.mp4"
+            ></video>
+            <button id="but_l">X</button>
+          </div>
+        </div>
+      </div>
+      <div id="log_container" class="log_container">
+        <div class="log_center">
+          <div class="login">
+            <div class="log_info">
+              <h class="log_header">Login to your account</h>
+              <p class="log_para">Login using social networks</p>
+              <div class="log_icon_div">
+                <img
+                  class="log_icons"
+                  src="./assets/images/facebook_icon.png"
+                  alt="facebook"
+                  id="facebook"
+                />
+                <div class="log_ic_div">
+                  <img
+                    class="log_icon"
+                    src="./assets/images/google.png"
+                    alt="google"
+                    id="google"
+                  />
+                </div>
+                <img
+                  class="log_icons"
+                  src="./assets/images/linkedin_icon.png"
+                  alt="linkedin"
+                  id="linkedin"
+                />
+                <div class="log_ic_div">
+                  <img
+                    class="log_icon"
+                    src="./assets/images/gmail (1).png"
+                    alt="gmail"
+                    id="gmail"
+                  />
+                </div>
+              </div>
+              <span class="log_or">OR</span>
+              <form class="log_inputs" id="log_form">
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="log_sign_input"
+                  id="log_email"
+                />
+                <div class="pass_log_div">
+                  <input
+                    id="log_pass"
+                    type="password"
+                    placeholder="password"
+                    class="log_sign_input"
+                  />
+                  <button id="log_see_btn" class="see_btn">
+                    <img
+                      id="log_seen"
+                      class="log_seen"
+                      src="./assets/images/seen.png"
+                      alt="eye"
+                    />
+                    <div id="log_unseen" class="log_unseen"></div>
+                  </button>
+                </div>
+                <button type="submit" class="log_btn">Sign In</button>
+              </form>
+            </div>
+            <div class="log_image">
+              <h1 class="log_new">New Here?</h1>
+              <p class="log_new_para">
+                Sign up and discover a great <br />
+                amount of new opportunities!
+              </p>
+              <button class="log_new_btn" id="login_sign">Sign Up</button>
+            </div>
+            <button id="rem_btn" class="rem_btn">X</button>
+          </div>
+        </div>
+      </div>
+      <div id="sign_container" class="log_container">
+        <div class="log_center">
+          <div class="sign_up">
+            <div class="log_info">
+              <h class="log_header">Sign up</h>
+              <p class="log_para">continue using social networks</p>
+              <div class="log_icon_div">
+                <img
+                  class="log_icons"
+                  src="./assets/images/facebook_icon.png"
+                  alt="facebook"
+                  id="facebook_sign"
+                />
+                <div class="log_ic_div">
+                  <img
+                    class="log_icon"
+                    src="./assets/images/google.png"
+                    alt="google"
+                    id="google_sign"
+                  />
+                </div>
+                <img
+                  class="log_icons"
+                  src="./assets/images/linkedin_icon.png"
+                  alt="linkedin"
+                  id="linkedin_sign"
+                />
+                <div class="log_ic_div">
+                  <img
+                    class="log_icon"
+                    src="./assets/images/gmail (1).png"
+                    alt="gmail"
+                    id="gmail_sign"
+                  />
+                </div>
+              </div>
+              <span class="log_or">OR</span>
+              <form id="sign_form" class="sign_inputs">
+                <input
+                  type="text"
+                  placeholder="Username"
+                  class="log_sign_input"
+                  id="username"
+                />
+                <input
+                  type="email"
+                  placeholder="Email"
+                  class="log_sign_input"
+                  id="email_val"
+                />
+                <div class="pass_log_div">
+                  <input
+                    id="sign_pass"
+                    type="password"
+                    placeholder="password"
+                    class="log_sign_input"
+                  />
+                  <button id="sign_see_btn" class="see_btn">
+                    <img
+                      id="sign_seen"
+                      class="log_seen"
+                      src="./assets/images/seen.png"
+                      alt="eye"
+                    />
+                    <div id="sign_unseen" class="sign_unseen"></div>
+                  </button>
+                </div>
+                <div class="pass_log_div">
+                  <input
+                    id="repeat_pass"
+                    type="password"
+                    placeholder="Repeat password"
+                    class="log_sign_input"
+                  />
+                  <button id="repeat_see_btn" class="see_btn">
+                    <img
+                      id="repeat_seen"
+                      class="log_seen"
+                      src="./assets/images/seen.png"
+                      alt="eye"
+                    />
+                    <div id="repeat_unseen" class="sign_unseen"></div>
+                  </button>
+                </div>
+                <button type="submit" class="log_btn">Sign Up</button>
+              </form>
+            </div>
+            <div class="log_image">
+              <h3 class="log_new"></h3>
+                Already have <br />
+                an account?
+              </h3>
+              <button class="log_new_btn" id="sign_login">Sign in</button>
+            </div>
+            <button id="sign_rem_btn" class="rem_btn">X</button>
+          </div>
+        </div>
+      </div>
+      <section>
+        <div class="first_section">
+          <div class="sec_frs_cont">
+            <div class="sec_frs_header">
+              <h3 class="sec_frs_head">
+                7 Years <br />
+                <span class="sec_frs_span">Experience</span>
+              </h3>
+              <h class="sec_frs_head"
+                >100K+ <br />
+                <span class="sec_frs_span">Custemer</span></h
+              >
+            </div>
+            <p class="sec_frs_para">
+              We are experienced and passionate pet lovers who
+              <br class="sec_frs_br" />
+              have been caring for animals since 2006, making us a
+              <br class="sec_frs_br" />
+              trusted and beloved name among pet owners everywhere
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="section_two">
+          <div class="sec_sec_cont">
+            <div class="sec_sec_img">
+              <img id="second_section_pic" class="sec_sec_photo" />
+            </div>
+            <div class="sec_sec_text">
+              <div class="sec_hid_img">
+                <img id="sec_hid_pic" class="sec_sec_photo" />
+              </div>
+
+              <h3 class="sec_sec_head">
+                We have a loving <br />
+                and expert team to <br />
+                care for your pets
+              </h3>
+
+              <p class="sec_sec_para">
+                Let’s keep your pets healthy, safe, and full of energy with
+                <br class="sec_sec_br" />
+                regular checkups, grooming, and personalized care plans.
+                <br class="sec_sec_br" />
+                They deserve the same love they give us every day!
+              </p>
+
+              <p id="sec_para" class="sec_sec_para">
+                Don’t wait until something’s wrong — keep your pets happy
+                <br />
+                and healthy with our caring and certified professionals.
+                <br />
+                Join the community of pet lovers who trust us every day!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="sec_thr_container">
+          <div class="section_three">
+            <h class="sec_thr_header">
+              What Benefits Will You <br />
+              Get For Your Pet With Us?
+            </h>
+            <div class="sec_thr_main">
+              <div class="sec_thr_info">
+                <h2 class="thr_hid_header">
+                  What Benefits <br />
+                  Will You Get <br />
+                  For Your Pet?
+                </h2>
+                <h3 class="thr_info_header">
+                  You and your pet will enjoy 3 main benefits
+                </h3>
+                <p class="sec_thr_para">
+                  We provide many pet services, but here are the
+                  <br class="sec_thr_br" />3 core benefits that make us stand
+                  out
+                </p>
+                <div class="sec_thr_content">
+                  <div class="thr_cont" id="thr_first">
+                    <div class="thr_icon_txt">
+                      <div class="medal_div">
+                        <img src="./assets/images/medal_icon.svg" alt="medal_icon" />
+                      </div>
+                      <div class="sec_thr_text">
+                        <h2 class="thr_text_head">Top Quality Care</h2>
+                        <p class="thr_text_para" id="thr_first_para">
+                          Your pet’s well-being is our
+                          <span class="thr_spn">top priority</span>
+                        </p>
+                      </div>
+                    </div>
+                    <img
+                      class="thr_arrow"
+                      id="thr_arrow"
+                      src="./assets/images/arrow.png"
+                      alt="arrow"
+                    />
+                  </div>
+                  <div class="thr_cont" id="thr_sec">
+                    <div class="thr_icon_txt">
+                      <div class="medal_div">
+                        <img src="./assets/images/dollar_icon.svg" alt="medal_icon" />
+                      </div>
+                      <div class="sec_thr_text">
+                        <h3 class="thr_text_head">Affordable Packages</h3>
+                        <p class="thr_text_para" id="thr_sec_para">
+                          Quality pet care with
+                          <span class="thr_spn">flexible pricing</span>
+                        </p>
+                      </div>
+                    </div>
+                    <img
+                      class="thr_arrow"
+                      id="thr_sec_arrow"
+                      src="./assets/images/arrow.png"
+                      alt="arrow"
+                    />
+                  </div>
+                  <div class="thr_cont" id="thr_thr">
+                    <div class="thr_icon_txt">
+                      <div class="medal_div">
+                        <img src="./assets/images/phone_icon.svg" alt="medal_icon" />
+                      </div>
+                      <div class="sec_thr_text">
+                        <h class="thr_text_head">Support & Guidance</h>
+                        <p class="thr_text_para" id="thr_thr_para">
+                          Ask anything, anytime — we’re here 24/7
+                        </p>
+                      </div>
+                    </div>
+                    <img
+                      class="thr_arrow"
+                      id="thr_thr_arrow"
+                      src="./assets/images/arrow.png"
+                      alt="arrow"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="thr_image_div">
+                <img
+                  class="thr_image"
+                  id="sec_thr_img"
+                  src=""
+                  alt="Pet_service_image"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="last_container">
+        <div class="footer">
+          <div class="footer_description">
+            <div class="footer_account">
+              <div class="footer_account_head">
+                <div class="footer_account_logo">
+                  <div class="orange_circle">P</div>
+                </div>
+                <div class="footer_account_name">Petify</div>
+              </div>
+              <div class="footer_account_description">
+                We are the most powerful and leading <br />
+                software agency in the world
+              </div>
+              <div class="footer_social_media">
+                <div class="social_media_logo">
+                  <img src="./assets/images/Combined Shape.png" alt="facebook" />
+                </div>
+                <div class="social_media_logo">
+                  <img src="./assets/images/Instagram.png" alt="Instagram" />
+                </div>
+                <div class="social_media_logo">
+                  <img src="./assets/images/Twitter.png" alt="Twitter" />
+                </div>
+
+                <div class="social_media_logo">
+                  <img src="./assets/images/Youtube.png" alt="Youtube" />
+                </div>
+              </div>
+            </div>
+            <div class="footer_items_container">
+              <div class="footer_item links">
+                <p class="ul_header">Links</p>
+                <ul class="footer_ul">
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Services</li>
+                  <li>Invest</li>
+                  <li>Tutorial</li>
+                  <li>Contact</li>
+                </ul>
+              </div>
+              <div class="footer_item about">
+                <p class="ul_header">About</p>
+                <ul class="footer_ul">
+                  <li>Partners</li>
+                  <li>Careers</li>
+                  <li>Press</li>
+                  <li>Community</li>
+                </ul>
+              </div>
+              <div class="footer_item resorces">
+                <p class="ul_header">Resorces</p>
+                <ul class="footer_ul">
+                  <li>Help</li>
+                  <li>Support</li>
+                  <li>Stories</li>
+                  <li>Reviews</li>
+                  <li>Resources</li>
+                </ul>
+              </div>
+              <div class="abt_res">
+                <div class="footer_item our_office">
+                  <p class="ul_header">Our Office</p>
+                  <p class="office_paragraph">
+                    Indonesia <br />
+                    Jl. Griya Permata Hijau no D1 <br />Purwomartani Kalasan
+                    <br />
+                    543881
+                  </p>
+                </div>
+                <div class="footer_item about" id="abt">
+                  <p class="ul_header">About</p>
+                  <ul class="footer_ul">
+                    <li>Partners</li>
+                    <li>Careers</li>
+                    <li>Press</li>
+                    <li>Community</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="thelast">
+          <div class="line"></div>
+          <h5 class="last_head">© 2021 Arcstress All rights reserved.</h5>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
